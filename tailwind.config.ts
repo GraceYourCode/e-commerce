@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         "secondary": "#f5f5f5",
       },
+      screens: {
+        "xs": "480px",
+      },
     },
   },
   plugins: [],

@@ -4,4 +4,15 @@
 
 * {
   outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+.hero-aside {
+  @apply flex flex-col gap-2 w-60 absolute lg:hidden bg-white z-50 shadow-lg top-0 overflow-y-clip duration-500
+}
+
+.hero-aside-desktop {
+  @apply border-r flex flex-col gap-2 lg:pt-8 max-lg:hidden
 }
