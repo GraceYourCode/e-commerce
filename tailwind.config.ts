@@ -12,6 +12,7 @@ const config: Config = {
         "secondary": "#f5f5f5",
         "red": "#DB4444",
         "yellow": "#ffad33",
+        "green": "#00ff66",
       },
       screens: {
         "xs": "480px",

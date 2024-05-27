@@ -4,11 +4,12 @@ export interface ImageCard {
     discount?: string;
     image: string | StaticImport;
     alt: string;
-    description?: string;
-    price?: number | string;
+    description: string;
+    price: number | string;
     formalPrice?: string | number;
     rating: number;
-    noOfRate?: number;
+    noOfRate: number;
+    addedClass?: string;
 }
 
 export interface Card {

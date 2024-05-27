@@ -12,15 +12,16 @@ const ImgCard: React.FC<ImageCard> = ({
   formalPrice,
   rating,
   noOfRate,
+  addedClass,
 }) => {
   let newArray = Array.from(Array(rating));
   const arrayWithKeys = newArray.map((e, i) => i);
 
   return (
     <div>
-      <div className="relative bg-secondary flex items-center justify-center h-64 rounded">
+      <div className="relative bg-secondary flex items-center justify-center h-64 rounded group">
         <Image src={image} alt={alt} className="m-auto" />
-        <span className="bg-red px-3 py-1 rounded text-xs absolute top-4 left-4 text-white font-thin">{discount}</span>
+        {discount && <span className={`${addedClass || "bg-red"} px-3 py-1 rounded text-xs absolute top-4 left-4 text-white font-thin`}>{discount}</span>}
         <aside className="*:w-8 *:h-8 *:rounded-full *:bg-white *:flex *:items-center *:justify-center *:text-xl flex flex-col gap-2 absolute right-4 top-4">
           <span>
             <IoHeartOutline />
@@ -29,7 +30,7 @@ const ImgCard: React.FC<ImageCard> = ({
             <IoEyeOutline />
           </span>
         </aside>
-        <button className="w-full text-center py-2 bg-black text-white absolute bottom-0 rounded-b">Add to Cart</button>
+        <button className="group-hover:w-full w-0 overflow-x-clip text-center py-2 bg-black text-white absolute bottom-0 rounded-b">Add to Cart</button>
       </div>
 
       <div className="mt-3 flex flex-col gap-3">
