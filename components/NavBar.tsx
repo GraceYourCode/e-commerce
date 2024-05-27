@@ -3,8 +3,8 @@
 import Image from "next/image"
 import logo from '@/public/logo.svg'
 import { IoHeartOutline, IoCartOutline } from "react-icons/io5";
-import Links from "./nav_components/Links"
-import SearchBar from "./nav_components/SearchBar"
+import Links from "./nav/Links"
+import SearchBar from "./nav/SearchBar"
 import { IoIosClose, IoMdMenu } from "react-icons/io";
 import { useState } from "react";
 
@@ -27,7 +27,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center sm:px-8 md:px-12 lg:px-20 xl:px-28 py-6 border-b ">
+      <nav className="flex justify-between items-center align-page py-6 border-b ">
         <Image src={logo} alt="logo" />
         <Links addedClass="md:flex hidden" />
         <div className="flex gap-4 items-center text-2xl xl:text-4xl">
@@ -39,9 +39,9 @@ const NavigationBar = () => {
 
       {
         // for devices with smaller screens
-        <div className="xl:hidden pt-4 md:pt-5 sm:px-8 md:px-12 lg:px-20 flex gap-5 items-center relative">
+        <div className="xl:hidden pt-4 md:pt-5 px-4 sm:px-8 md:px-12 lg:px-20 flex gap-5 items-center relative">
           <IoMdMenu className="lg:hidden block text-3xl" onClick={() => toggleMenuList()} />
-          <SearchBar addedClass="flex w-96" />
+          <SearchBar addedClass="flex w-72 xs:w-80 sm:w-96" />
           <aside className={`hero-aside ${menuClosed ? "h-0" : "h-fit max-lg:p-6"}`}>
             <IoIosClose className="lg:hidden block text-3xl" onClick={() => toggleMenuList()}/>
             {
