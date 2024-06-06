@@ -1,11 +1,11 @@
 import { imgCards } from "@/utils/data"
 import Button from "../Button"
-import Timer from "../flash_sales/Timer"
 import Carousel from "./Carousel"
 import CarouselBtns from "./CarouselButton"
 import ImgCard from "./CarouselImgCard"
 import Heading from "./HomePageSectionHeading"
 import Title from "./HomePageSectionsTitle"
+import Timer from "./flash_sales/Timer"
 
 const FlashSales = () => {
   return (

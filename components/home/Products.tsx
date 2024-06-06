@@ -4,6 +4,7 @@ import CarouselBtns from "./CarouselButton"
 import Heading from "./HomePageSectionHeading"
 import Title from "./HomePageSectionsTitle"
 import ImgCard from "./CarouselImgCard"
+import Button from "../Button"
 
 const Products = () => {
   return (
@@ -20,6 +21,7 @@ const Products = () => {
           ))
         }
       </Carousel>
+      <Button text="View All Products"/>
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import Image from "next/image"
 import jblBoomBox from '@/public/assets/jbl-boom-box.svg'
 import ellipse from '@/public/assets/ellipse.svg'
-import Timer from "./Timer"
 import Button from "../Button"
+import Timer from "./advert/Timer"
 
 const Adverts = () => {
   return (

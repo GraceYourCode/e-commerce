@@ -16,3 +16,9 @@ export interface Card {
   image: StaticImport | string;
   text: string;
 }
+
+export interface featuredCards {
+  image: StaticImport | string;
+  title: string;
+  description: string;
+}
